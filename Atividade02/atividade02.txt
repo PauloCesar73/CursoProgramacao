@@ -1,0 +1,5 @@
+Antes de ocorrer a troca em cada fileira há no mínimo quatro alunos que gostam de uma das disciplinas, 
+assim que ouve a troca uma fileira passou a ficar com três alunos de cada preferência.
+
+Também antes de ocorrer a troca dos alunos aviam 18 alunos de cada preferência nas disciplinas,
+depois que ouve a troca ficaram 17 alunos de preferência em M e 19 de preferência em P.
