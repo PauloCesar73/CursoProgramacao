@@ -1,0 +1,11 @@
+Declaração das Variáveis
+
+Caractere = nome, endereço
+Inteiro = cpf, rg
+Real = altura
+
+Perguntar nome: nome<-
+Perguntar Cpf: cpf<-
+Perguntar Rg: rg<-
+Perguntar altura: altura<-
+Perguntar endereço: endereço<-
