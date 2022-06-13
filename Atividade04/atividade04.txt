@@ -1,0 +1,53 @@
+Declaração das variáveis:
+
+Caractere = nome, cidade, endereco, nomedamae, nomedopai
+Real = peso, rendabruta
+Inteiro = cpf, rg, idade 
+
+
+Algotitmo:
+
+Escreva(“ Cadastro ”)
+
+Escreva(“Qual seu nome?”)
+Leia(nome)
+
+Escreva(“Qual seu endereço?”)
+Leia(endereco)
+
+Escreva(“Qual sua cidade?”)
+Leia(cidade)
+
+Escreva(“Digite seu CPF:”)
+Leia(cpf)
+
+Escreva(“Digite seu RG:”)
+Leia(rg)
+
+Escreva(“Qual sua idade?”)
+Leia(idade)
+
+Escreva(“Qual o nome do seu pai?”)
+Leia(nomedopai)
+
+Escreva(“Qual o nome da sua mãe?”)
+Leia(nomedamae)
+
+Escreva(“Digite seu peso:”)
+Leia(peso)
+
+Escreva(“Informe aqui a sua renda bruta:”)
+Leia(rendabruta)
+
+Escreva(“ Cadastro completo, seus dados são: ”)
+Escreva(“Nome:”,nome)
+Escreva(“Endereço:”,endereco)
+Escreva(“Cidade:”,cidade)
+Escreva(“Cpf:”,cpf)
+Escreva(“Rg:”,rg)
+Escreva(“Idade:”,idade)
+Escreva(“Nome do pai:”,nomedopai)
+Escreva(“Nome da mãe:”,nomedamae) 
+Escreva(“Peso:”,peso)
+Escreva(“Renda bruta:”,rendabruta)
+
