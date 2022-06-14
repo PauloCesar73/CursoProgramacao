@@ -1,0 +1,31 @@
+Algoritmo:
+
+Var
+
+aluno, turma: Caractere
+nota : Real
+cond, result : Inteiro
+
+Inicio
+
+cond <- 1
+result <- 0
+
+enquanto cond <= 100 faca
+escreva ("Informe seu nome:")
+leia (aluno)
+escreva ("Qual a sua turma?, digite A, B, C ou D.")
+leia (turma)
+escreva ("Qual foi sua nota?")
+leia (nota)
+se nota >= 7 entao 
+result <- result + 1
+escreva ("Aluno", aluno "foi aprovado, nota:", nota "Turma:", turma)
+cond <- cond + 1
+
+escreva ("Total de alunos aprovados é:", result)
+
+
+
+
+
