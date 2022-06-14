@@ -1,0 +1,15 @@
+Algoritmo: 
+
+O transporte escolhido é terrestre? Sim
+É longo? Sim
+É utilizado para transportar algum tipo de carga? Não
+Cabe muitas pessoas? Sim
+É bastante utilizado para transporte público? Sim
+Anda em trilhos? Não
+
+Então, o transporte escolhido foi o Ônibus.
+
+
+
+
+
