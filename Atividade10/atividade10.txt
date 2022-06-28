@@ -1,10 +1,10 @@
 class CalcularNumComplex:
     
-def calcular_numcomplex(a, b, c):
+def calcular_numcomplex(x, y, z):
 
-    numbA = complex(a)
-    numbB = complex(b, c)
-    numbC = complex(c, a)
+    numbA = complex(x)
+    numbB = complex(y, z)
+    numbC = complex(z, x)
 
     calcularmult = numbA * numbB * numbC
     print("Resultado, multiplicação", calcularmult)
