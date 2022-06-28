@@ -7,22 +7,22 @@ def calcular_numcomplex(a, b, c):
     numbC = complex(c, a)
 
     calcularmult = numbA * numbB * numbC
-    print("Multiplicação", calcularmult)
+    print("Resultado, multiplicação", calcularmult)
     print("Real:", calcularmult.real)
     print("Img:", calcularmult.imag)
     
     calcularad = numbA + numbB + numbC
-    print("Adição", calcularad)
+    print("Resuldado, adição", calcularad)
     print("Real:", calcularad.real)
     print("Img:", calcularad.imag)
 
     calculardiv = numbA / numbB / numbC
-    print("Divisão", calculardiv)
+    print("Resultado, divisão", calculardiv)
     print("Real:", calculardiv.real)
     print("Img:", calculardiv.imag)
     
     calcularsub = numbA - numbB - numbC
-    print("Subtração", calcularsub)
+    print("Resultado, subtração", calcularsub)
     print("Real:", calcularsub.real)
     print("Img:", calcularsub.imag)
     
