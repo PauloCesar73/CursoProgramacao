@@ -1,0 +1,29 @@
+class CalcularNumComplex:
+    
+def calcular_numcomplex(a, b, c):
+
+    numbA = complex(a)
+    numbB = complex(b, c)
+    numbC = complex(c, a)
+
+    calcularmult = numbA * numbB * numbC
+    print("Multiplicação", calcularmult)
+    print("Real:", calcularmult.real)
+    print("Img:", calcularmult.imag)
+    
+    calcularad = numbA + numbB + numbC
+    print("Adição", calcularad)
+    print("Real:", calcularad.real)
+    print("Img:", calcularad.imag)
+
+    calculardiv = numbA / numbB / numbC
+    print("Divisão", calculardiv)
+    print("Real:", calculardiv.real)
+    print("Img:", calculardiv.imag)
+    
+    calcularsub = numbA - numbB - numbC
+    print("Subtração", calcularsub)
+    print("Real:", calcularsub.real)
+    print("Img:", calcularsub.imag)
+    
+print(calcular_numcomplex(8, 10, 5))
