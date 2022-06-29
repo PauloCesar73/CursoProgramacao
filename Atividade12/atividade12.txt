@@ -1,0 +1,22 @@
+rodas = int(input( 'Quantas rodas tem o veículo '))
+peso = int(input( 'Peso bruto em quilogramas: '))
+pessoas = int(input( 'Quantidade de pessoas no veículo: '))
+
+if rodas < 4:
+  print('Melhor categoria de habilitação "A"')
+
+elif rodas == 4 and pessoas <= 8 and peso <= 3500:
+  print('Melhor categoria de habilitação "B"')
+
+elif rodas >= 4 and peso >= 3500 and peso <= 6000:
+  print('Melhor categoria de habilitação "C"')
+
+elif rodas >= 4 and pessoas > 8:
+  print('Melhor categoria de habilitação "D"')
+
+elif rodas >= 4 and peso > 6000:
+  print('Melhor categoria de habilitação "E"')
+
+else:
+  print ('Não temos essa informação')
+
