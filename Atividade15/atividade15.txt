@@ -1,0 +1,45 @@
+def adi(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mult(a, b):
+    return a * b
+
+def div(a, b):
+    return a // b
+
+while True: 
+
+  print("Escolha uma das operações.")
+
+  print("1 - Soma")
+  print("2 - Subtração")
+  print("3 - Multiplicação")
+  print("4 - Divisão")
+  print("0 - Sair")
+
+  option = int(input("Digite sua opção 0, 1, 2, 3 ou 4: "))
+
+  if option < 0 or option > 4:
+      print("Essa opção não existe")
+      continue
+  
+  elif option == 0:
+    break
+    
+  num1 = int(input("Digite o primeiro número: "))
+  num2 = int(input("Digite o segundo número: "))
+
+  if option == 1:
+      print(num1, "+", num2, "=", adi(num1, num2))
+
+  elif option == 2:
+      print(num1, "-", num2, "=", sub(num1, num2))
+
+  elif option == 3:
+      print(num1, "*", num2, "=", mult(num1, num2))
+
+  elif option == 4:
+      print(num1, "/", num2, "=", div(num1, num2))
