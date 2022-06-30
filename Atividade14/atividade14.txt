@@ -9,8 +9,8 @@ def mult(a, b):
 def div(a, b):
     return a // b
 
-num1 = int(input("\nDigite o primeiro número: "))
-num2 = int(input("\nDigite o segundo número: "))
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
 
 print("Escolha uma das operações.")
 
