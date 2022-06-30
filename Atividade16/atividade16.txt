@@ -1,6 +1,14 @@
 anoAtual = 2022
 
-nome = (input("Digite seu nome completo: "))
+while True:
+
+  nome = (input("Digite seu nome completo: "))
+
+  if nome == "":
+    print("Campo precisar ser preenchido!")
+    continue
+  else:
+      break
 
 print("Informe seu ano de nascimento")
 
