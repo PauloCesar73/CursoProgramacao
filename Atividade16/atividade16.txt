@@ -1,0 +1,23 @@
+anoAtual = 2022
+
+nome = (input("Digite seu nome completo: "))
+
+print("Informe seu ano de nascimento")
+
+while True:
+
+  try:
+      ano = int(input("Ano "))
+
+      if ano < 1922 or ano > 2021:
+        print("Erro no ano!")
+        continue
+      else:
+        ano = anoAtual - ano
+        print(nome)
+        print("Tem ou completará", ano, "anos de idade.")
+
+        break
+
+  except:
+        print("Erro no ano!")
