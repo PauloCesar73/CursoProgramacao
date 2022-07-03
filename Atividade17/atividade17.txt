@@ -5,34 +5,43 @@ branco = 0
 
 print("Votação") 
 
-print("Digite 1 para candidato_X")
-print("Digite 2 para candidato_Y")
-print("Digite 3 para candidato_Z")
+print("Digite 889 para candidato_X")
+print("Digite 847 para candidato_Y")
+print("Digite 515 para candidato_Z")
 print("Digite 0 para branco")
-print("Para finalizar digite F")
 
 
 while True:
-
+  
   candidato = str(input("Digite o numero do seu candidato: "))
 
-  if candidato == '1':
-    candidato_X += 1
+  if candidato.isnumeric():
 
-  elif candidato == '2':
-    candidato_Y += 1
+    if candidato == '889':
+      candidato_X += 1
 
-  elif candidato == '3':
-    candidato_Z += 1
+    elif candidato == '847':
+      candidato_Y += 1
 
-  elif candidato == '0':
-    branco += 1
+    elif candidato == '515':
+      candidato_Z += 1
 
-  elif candidato == "f" or candidato == "F":
-    break
+    elif candidato == '0':
+      branco += 1
+
+    else:
+      branco += 1
 
   else:
-    branco += 1
+    print("ERRO!, Vote novamente. ")
+    continue
+
+  candidato = str(input("Para finalizar digite 'F' "))
+
+  if candidato == "f" or candidato == "F":
+   break
+  else:
+   print("Prox Votação")
 
 print("Número de votos")
 
