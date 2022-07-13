@@ -1,0 +1,51 @@
+Objetos abstratos.
+
+Objeto: Plano de Saúde
+
+Atributos:
+Rg: 111111
+CPF: 1111211
+CEP: 55778
+
+Métodos:
+Consulta()
+Exames()
+ResultadoExames()
+
+Objeto: Conta Bancaria
+
+Atributos:
+Cartão: Itaú
+Sáldo: 10000
+Limite: 20000
+
+Métodos:
+RetirarDinheiro()
+DepositarDinheiro()
+ComprarProduto()
+
+Objetos materiais.
+
+Objeto: Notebook
+
+Atributos:
+Marca: Acer
+Processador: I3
+Cor: Preto
+
+Métodos:
+Ligar()
+Desligar()
+Assistir()
+
+Objeto: Celular
+
+Atributos:
+Marca: Sansung
+Cor: Dourado
+Sistema Operacional: Android
+
+Métodos:
+ligações()
+Música()
+Volume()
