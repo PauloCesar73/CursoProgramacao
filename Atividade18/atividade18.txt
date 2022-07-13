@@ -1,0 +1,19 @@
+import pandas as pd
+
+programaluno = pd.read_csv("notas_alunos.csv", sep=",")
+
+programaluno["Media"] = (programaluno["Nota_1"] + programaluno["Nota_2"]) / 2
+
+programaluno.loc[(programaluno["Media"] < 7) | (programaluno["Faltas"] > 5), "Situacao"] = "Reprovado"
+programaluno.loc[(programaluno["Media"] >= 7) & (programaluno["Faltas"] <= 5), "Situacao"] = "Aprovado"
+
+programaluno.to_csv("alunos_situacao.csv")
+
+faltas = programaluno["Faltas"].max()
+print("Maior numero de faltas:", faltas)
+
+maiormedia = programaluno["Media"].max()
+print("Maior média", maiormedia)
+
+mediageral = programaluno["Media"].mean()
+print("Média geral:", mediageral)
