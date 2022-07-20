@@ -1,0 +1,33 @@
+Pacote 1:
+  
+package br.gov.empresa;
+
+    class cliente {
+        String nome;
+        String endereco;
+        String idade;
+    }
+
+
+    class vagas {
+        String formacao;
+        String experiencia;
+        String numeroinscricao;
+    }
+
+Pacote 2:
+
+package br.gov.empresa.sis.pacote;
+
+    class empregado {
+        String Rg;
+        String CPF;
+        String CEP;
+    }
+
+
+    class equipamentos {
+        String arcondicionado;
+        String computadores;
+        String cadeiras;
+    }
