@@ -1,0 +1,29 @@
+Feito em Java.
+
+public class vendas {
+
+	public String numvendas;
+	public int quantia;
+	
+	public vendas() {
+	    if(quantia or numvendas < 0){
+	         System.out.println("Não pode ser valor negativo.");
+	    }
+	}
+	
+	public void setNumvendas(String Numvendas) {
+		this.numvendas = Numvendas;
+	}
+	
+	public void setQuantia(int Quantia) {
+		this.quantia = Quantia;
+	}
+	
+	public String getNumvendas() {
+		return this.numvendas;
+	}
+	
+	public int getQuantia() {
+		return this.quantia;
+	}
+}
