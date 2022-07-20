@@ -1,0 +1,28 @@
+Manipulando String em Python
+
+Código 1:
+Deixando as letras todas em minúsculas.
+
+texto = "MANIPULANDO STRING..."
+
+texto = texto.lower()
+
+print(texto)
+
+Código 2:
+Este código mostrará se a palavra está inclusa no texto.
+
+texto = input(“Escreva um texto: “)
+palavra = input(“Escreva uma palavra: “)
+print(palavra.lower() in texto.lower())
+
+Código 3:
+Este código deixa destacado em maiúsculo o nome e o endereço informado.
+
+texto = input('Qual seu nome completo? ')
+endereco = input('Qual seu endereço? ')
+
+print('Seu nome é: ')
+print(texto.upper())
+print('Mora em: ')
+print(endereco.upper())
