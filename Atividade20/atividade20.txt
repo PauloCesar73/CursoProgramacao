@@ -1,0 +1,23 @@
+Feito em Java.
+
+public class classStatic {
+    public static class empresa {
+    public static int quant=0;
+    
+    empresa(){
+        quant++;
+    }
+    public void Total() {
+        System.out.println(quant);
+    }
+
+}
+    public static void main(String[] args) {
+        empresa computadores = new empresa();
+        empresa mouses = new empresa();
+        empresa funcionarios = new empresa();
+        computadores.Total();
+        mouses.Total();
+        funcionarios.Total();
+        
+    }
