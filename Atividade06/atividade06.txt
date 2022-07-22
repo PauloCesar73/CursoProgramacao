@@ -1,31 +1,110 @@
 Algoritmo:
 
-Var
+Inicio{
 
-aluno, turma: Caractere
-nota : Real
-cond, result : Inteiro
+var: notaMaxA, notaMaxB, notaMaxC, notaMaxD, notaMaxGeral, notaTemp real;
+var: qtdAprovados, qtdAprovadosB, qtdAprovadosC, qtdAprovadosD int;
+var: alunoMaxA, alunoMaxB, alunoMaxC, alunoMaxD, alunoMaxGeral alunoTemp texto;
 
-Inicio
+notaMaxA = 0.0;
+notaMaxB = 0.0;
+notaMaxC = 0.0;
+notaMaxD = 0.0;
+notMaxGeral = 0.0;
+qtdAprovadosA = 0.0;
+alunoMaxA = 0;
+alunoMaxB = 0;
+alunoMaxC = 0;
+alunoMaxD = 0;
 
-cond <- 1
-result <- 0
+escreva("Programa para receber 25 notas de 4 turmas, Não repita as notas por turma. ")
 
-enquanto cond <= 100 faca
-escreva ("Informe seu nome:")
-leia (aluno)
-escreva ("Qual a sua turma?, digite A, B, C ou D.")
-leia (turma)
-escreva ("Qual foi sua nota?")
-leia (nota)
-se nota >= 7 entao 
-result <- result + 1
-escreva ("Aluno", aluno "foi aprovado, nota:", nota "Turma:", turma)
-cond <- cond + 1
+para int i de 1 até 25 faca {
+    escreva("Digite o nome do aluno ", i , ", da turma A: ");
+    leia(alunoTemp);
+    escreva("Digite a nota do aluno ", i , ", da turma A: ");
+    leia(notaTemp);
+    se (notaTemp > notaMaxA){
+      notaMaxA = notaTemp;
+      alunoMaxA = alunoTemp;
+    }
+    se(notaTemp >= 7.0){
+      qtdAprovadosA++;
+    }
+    se(notaTemp > notaGeral){
+      notaMaxGeral = notaMaxGeral;
+      alunoMaxGeral = alunoTemp;
+      }
 
-escreva ("Total de alunos aprovados é:", result)
+  }
+  
+  para int i de 1 até 25 faca {
+    escreva("Digite o nome do aluno ", i , ", da turma B: ");
+    leia(alunoTemp);
+    escreva("Digite a nota do aluno ", i , ", da turma B: ");
+    leia(notaTemp);
+    se (notaTemp > notaMaxB){
+      notaMaxB = notaTemp;
+      alunoMaxB = alunoTemp;
+    }
+    se(notaTemp >= 7.0){
+      qtdAprovadosB++;
+    }
+    se(notaTemp > notaGeral){
+      notaMaxGeral = notaMaxGeral;
+      alunoMaxGeral = alunoTemp;
+      }
 
+  }
+  
+  para int i de 1 até 25 faca {
+    escreva("Digite o nome do aluno ", i , ", da turma C: ");
+    leia(alunoTemp);
+    escreva("Digite a nota do aluno ", i , ", da turma C: ");
+    leia(notaTemp);
+    se (notaTemp > notaMaxC){
+      notaMaxC = notaTemp;
+      alunoMaxC = alunoTemp;
+    }
+    se(notaTemp >= 7.0){
+      qtdAprovadosC++;
+    }
+    se(notaTemp > notaGeral){
+      notaMaxGeral = notaMaxGeral;
+      alunoMaxGeral = alunoTemp;
+      }
 
+  }
+  
+  para int i de 1 até 25 faca {
+    escreva("Digite o nome do aluno ", i , ", da turma D: ");
+    leia(alunoTemp);
+    escreva("Digite a nota do aluno ", i , ", da turma D: ");
+    leia(notaTemp);
+    se (notaTemp > notaMaxD){
+      notaMaxD = notaTemp;
+      alunoMaxD = alunoTemp;
+    }
+    se(notaTemp >= 7.0){
+      qtdAprovadosD++;
+    }
+    se(notaTemp > notaGeral){
+      notaMaxGeral = notaMaxGeral;
+      alunoMaxGeral = alunoTemp;
+      }
 
+  }
+  
+escreval("Quantidade de Aprovados turma A:" + qtdAprovadosA)
+escreval("Quantidade de Aprovados turma A:" + qtdAprovadosB)
+escreval("Quantidade de Aprovados turma A:" + qtdAprovadosC)
+escreval("Quantidade de Aprovados turma A:" + qtdAprovadosD)
 
+escreval("A maior nota da turma A foi" + notaMaxA + ", do aluno " + alunoMaxA);
+escreval("A maior nota da turma A foi" + notaMaxB + ", do aluno " + alunoMaxA);
+escreval("A maior nota da turma A foi" + notaMaxC + ", do aluno " + alunoMaxA);
+escreval("A maior nota da turma A foi" + notaMaxD + ", do aluno " + alunoMaxA);
 
+escreval("A maior nota entre todas as turmas foi " + notaMaxGeral + ", do aluno" + alunoMaxGeral);
+
+}
