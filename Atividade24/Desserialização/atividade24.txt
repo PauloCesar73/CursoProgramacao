@@ -1,0 +1,25 @@
+//main.java
+
+package com.paulo.teste;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class main {
+
+		 public static void main(String... args) throws Exception {
+			 Perfumes loja = new Perfumes();
+			 loja.setNome("212");
+			 loja.setMarca("lacoste");
+		 
+			 FileInputStream arquivo = new FileInputStream("C:\\Users\\Fe\\Documents\\serializando\\serializando.txt");
+			 ObjectInputStream obj = new ObjectInputStream(arquivo);
+			 Perfumes lojas = (Perfumes) obj.readObject();
+			 obj.close(); 
+			 System.out.println("Objeto deserializado.");
+
+	 }
+}

@@ -1,0 +1,27 @@
+//Perfumes.java
+package com.paulo.teste;
+
+import java.io.Serializable;
+
+public class Perfumes implements Serializable {
+	
+	String nome;
+	String marca;
+	
+	public void setNome(String nome1) {
+		this.nome = nome1;
+	}
+	
+	public void setMarca(String marca1) {
+		this.marca = marca1;
+	}
+	
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public String getMarca() {
+		return this.marca;
+	}
+}
+

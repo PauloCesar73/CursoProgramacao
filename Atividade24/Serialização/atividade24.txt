@@ -1,0 +1,27 @@
+//main.java
+package com.paulo.teste;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+public class main {
+
+	public static void main(String[] args) {
+		Perfumes loja = new Perfumes();
+		loja.setNome("212");
+		loja.setMarca("lacoste");
+		
+		try {
+			FileOutputStream arquivo = new FileOutputStream("C:\\Users\\Fe\\Documents\\serializando\\serializando.txt");
+			ObjectOutputStream obj = new ObjectOutputStream(arquivo);
+			obj.writeObject(loja);
+			obj.close();
+		} catch (IOException e) {
+			System.out.println("Erro!");
+			e.printStackTrace();
+		}
+		System.out.println("Objeto serializado.");
+	}
+
+}
