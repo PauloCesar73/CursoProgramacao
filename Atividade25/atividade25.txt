@@ -1,0 +1,32 @@
+public class ExceptionExample {
+  public static void main(String[] args) {
+    try {
+        System.out.println(10 / 0);
+    } catch (Exception ex) {
+         System.out.println("Ocorreu um erro, esse numero não pode ser dividido.");
+    }
+  }
+}
+
+Outro exemplo:
+
+public class main {
+
+	public static void main(String[] args) {
+		Perfumes loja = new Perfumes();
+		loja.setNome("212");
+		loja.setMarca("lacoste");
+		
+		try {
+			FileOutputStream arquivo = new FileOutputStream("C:\\Users\\Fe\\Documents\\serializando\\serializando.txt");
+			ObjectOutputStream obj = new ObjectOutputStream(arquivo);
+			obj.writeObject(loja);
+			obj.close();
+		} catch (IOException e) {
+			System.out.println("Erro!");
+			e.printStackTrace();
+		}
+		System.out.println("Objeto serializado.");
+	}
+
+}
