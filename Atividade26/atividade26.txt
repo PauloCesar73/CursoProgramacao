@@ -1,0 +1,12 @@
+                  Creational patterns(Padrões de criação)
+
+   Esse padrão de projeto abstrai o processo de instanciação de um objeto com foco
+de padronizar a criação de objetos para tornar um sistema independente.
+   Os padrões dentro dele são Abstract factory, Builder, Prototype, Factory method
+e Singleton.
+
+Padrão Abstract factory.
+É um padrão de projeto de software. Este padrão permite a criação de famílias de objetos relacionados 
+ou dependentes por meio de uma única interface e sem que a classe concreta seja especificada. 
+Uma fábrica é a localização de uma classe concreta no código em que objetos são construídos.
+
